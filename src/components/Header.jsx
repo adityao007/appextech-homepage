@@ -120,7 +120,7 @@ const Header = () => (
       <div className="container nav-inner">
         <div className="logo">
           <a href="/" aria-label="Appextech homepage">
-            <img className="logo-image" src="/src/assets/appextechlogo.png" alt="Appextech" />
+            <img className="logo-image" src="/public/appextechlogo.png" alt="Appextech" />
           </a>
         </div>
 

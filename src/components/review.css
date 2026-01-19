@@ -1,0 +1,114 @@
+
+.review-section {
+  padding: 60px 0 70px;
+  color: #fff;
+  background: radial-gradient(circle at top, rgba(255, 255, 255, 0.18), transparent 55%),
+    linear-gradient(135deg, #0a8ad8 0%, #0b7dc5 40%, #0a6fb2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.review-section::before,
+.review-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(12deg, rgba(255, 255, 255, 0.1), transparent 65%);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.review-section::after {
+  background: linear-gradient(-18deg, rgba(255, 255, 255, 0.1), transparent 70%);
+  opacity: 0.4;
+}
+
+.review-container {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.review-section h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #fff;
+}
+
+.review-card {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 8px 60px;
+  position: relative;
+}
+
+.review-card p {
+  font-size: 15.5px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.review-quote {
+  position: absolute;
+  font-size: 34px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.review-quote--left {
+  left: 0;
+  top: -6px;
+}
+
+.review-quote--right {
+  right: 0;
+  bottom: -6px;
+}
+
+.review-author {
+  margin-top: 12px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.review-dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.review-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.45);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.review-dot.is-active {
+  background: #fff;
+  transform: scale(1.1);
+}
+
+@media (max-width: 720px) {
+  .review-section {
+    padding: 50px 0 60px;
+  }
+
+  .review-card {
+    padding: 8px 32px;
+  }
+
+  .review-section h2 {
+    font-size: 22px;
+  }
+
+  .review-card p {
+    font-size: 14.5px;
+  }
+}

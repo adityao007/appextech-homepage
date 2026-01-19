@@ -1,0 +1,178 @@
+.marketing {
+  background: #f5f7fb;
+  padding-top: 60px;
+}
+
+.marketing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+  align-items: start;
+}
+
+.marketing-card {
+  background: transparent;
+  border-radius: 0;
+  padding: 0 10px;
+  border: none;
+  box-shadow: none;
+  text-align: center;
+}
+
+.marketing-card h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  margin: 14px 0 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.marketing .section-heading h2 {
+  font-weight: 400;
+}
+
+.marketing-card p {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.marketing-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #e8f1ff;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 auto 8px;
+}
+
+.marketing-icon svg {
+  width: 26px;
+  height: 26px;
+  display: block;
+  color: #ffffff;
+}
+
+.marketing-icon--seo {
+  background: #0a7bb5;
+}
+
+.marketing-icon--google {
+  background: #d94b45;
+}
+
+.marketing-icon--facebook {
+  background: #22a6b3;
+}
+
+.marketing-icon--linkedin {
+  background: #2f343b;
+}
+
+.marketing-title--seo {
+  color: #0a7bb5;
+}
+
+.marketing-title--google {
+  color: #d94b45;
+}
+
+.marketing-title--facebook {
+  color: #22a6b3;
+}
+
+.marketing-title--linkedin {
+  color: #2f343b;
+}
+
+.email {
+  background: #ffffff;
+}
+
+.email-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  align-items: center;
+}
+
+.email-content h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  margin-bottom: 16px;
+}
+
+.email-content p {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.email-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.email-actions .btn.ghost {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.email-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.email-collage {
+  position: relative;
+  width: min(520px, 100%);
+  min-height: 300px;
+}
+
+.email-collage img {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+}
+
+.email-collage-mail {
+  width: 250px;
+  left: 280px;
+  top: 100px;
+  z-index: 3;
+}
+
+.email-collage-money {
+  width: 150px;
+  left: 140px;
+  top: 190px;
+  z-index: 2;
+}
+
+.email-collage-dashboard {
+  width: 350px;
+  right: 0;
+  top: 5px;
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .email-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1100px) {
+  .marketing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .marketing-grid {
+    grid-template-columns: 1fr;
+  }
+}
